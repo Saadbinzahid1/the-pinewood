@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 
-function useOutsideClick(handler) {
+export function useOutsideClick(handler) {
   const ref = useRef();
 
   useEffect(
@@ -16,5 +16,3 @@ function useOutsideClick(handler) {
   );
   return ref;
 }
-
-export default useOutsideClick;
