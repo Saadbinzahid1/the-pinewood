@@ -1,7 +1,7 @@
 import { useQuery } from "@tanstack/react-query";
 import { getCabins } from "../../services/apiCabins";
 
-function useCabins() {
+export function useCabins() {
   const {
     isPending,
     data: cabins,
@@ -13,5 +13,3 @@ function useCabins() {
 
   return { isPending, cabins, error };
 }
-
-export default useCabins;
